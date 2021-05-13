@@ -1,7 +1,7 @@
 "use strict";
 
 ////////2_01 INTRO A LA PROGRAMACIÓN
-
+/*
 //Ejercicio 2
 
 let address = "Calle Falsa 123";
@@ -87,7 +87,7 @@ formElement.addEventListener("change", handlerForm);
 */
 
 // EJERCICIO 8
-
+/*
 const strawberry = document.querySelector(".fruit-strawberry");
 const banana = document.querySelector(".fruit-banana");
 const kiwi = document.querySelector(".fruit-kiwi");
@@ -128,4 +128,77 @@ movies[2].push("dooonie");
 
 console.log(movies);
 
+*/
+
 ////////2_08 ARRAYS Y BUCLES 2
+
+//Ejercicio 1
+
+console.log("EJERCICIO 1");
+
+const arr = [];
+
+function get100Numbers() {
+  for (let i = 0; i < 100; i++) {
+    arr.push(i);
+  }
+  console.log(arr);
+}
+
+get100Numbers();
+
+//Ejercicio 2
+
+console.log("EJERCICIO 2");
+
+const arr1 = [];
+
+function getReversed100Numbers() {
+  for (let i = 0; i < 100; i++) {
+    arr1.push(i);
+    arr1.reverse();
+  }
+  console.log(arr1);
+}
+
+getReversed100Numbers();
+
+//Ejercicio 3
+
+console.log("EJERCICIO 3: APARTADO 1");
+
+const lostNumbers = [4, 8, 15, 16, 23, 31, 42];
+
+const lostNumbersEven = [];
+
+const lostNumbersOdd = [];
+
+function bestLostNumber() {
+  for (let i = 0, par = 0, impar = 0; i != 100; ++i)
+    switch (lostNumbers[i] % 2) {
+      case 0: // Par.
+        lostNumbersEven[par++] = lostNumbers[i];
+        break;
+      case 1: // Impar.
+        lostNumbersOdd[impar++] = lostNumbers[i];
+        break;
+    }
+  console.log(lostNumbersEven);
+  console.log(lostNumbersOdd);
+}
+
+bestLostNumber();
+
+console.log("EJERCICIO 3: APARTADO 2");
+
+const lostNumbersMultiple = [];
+
+function multipleNumber() {
+  for (let i = 0, mul = 0; i < lostNumbers.length; i++)
+    if (lostNumbers[i] % 3 === 0) {
+      lostNumbersMultiple[mul++] = lostNumbers[i];
+    }
+  console.log(lostNumbersMultiple);
+}
+
+multipleNumber();
