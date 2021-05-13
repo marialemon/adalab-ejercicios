@@ -1,3 +1,28 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+* {
+  color: #141414;
+}
+
+.header {
+  text-align: center;
+}
+
+.section {
+  background: #eef0f2;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.article {
+  border-bottom: medium solid #141414;
+  padding: 1rem 0;
+}
+
+/*2.05 EVENTOS STYLE*/
+
 .fruit {
   padding: 6px;
   cursor: pointer;
@@ -5,11 +30,6 @@
 }
 .fruit--selected {
   border-bottom: 3px solid #64dac4; /* green */
-}
-
-body {
-  margin: 0;
-  font-family: Arial, san-serif;
 }
 
 .teachers {
