@@ -1,0 +1,33 @@
+.fruit {
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 3px solid #b9b8ba; /* grey */
+}
+.fruit--selected {
+  border-bottom: 3px solid #64dac4; /* green */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, san-serif;
+}
+
+.teachers {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.teacher__img {
+  width: 200px;
+  height: auto;
+}
+
+.teacher--selected {
+  border: thin solid blue;
+}

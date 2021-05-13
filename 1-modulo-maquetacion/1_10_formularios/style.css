@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.form {
+  background-color: #242424;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.6rem;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+}
+
+small {
+  font-size: 11px;
+}

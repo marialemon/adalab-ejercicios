@@ -1,0 +1,24 @@
+body {
+  background-color: #f3f4f5;
+  margin: 2em;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p, li {
+  color: #757575;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+hr {
+  color: #75757544;
+}

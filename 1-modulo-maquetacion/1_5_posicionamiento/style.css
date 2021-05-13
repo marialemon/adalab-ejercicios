@@ -1,0 +1,54 @@
+/*Modos de display: block, inline, inline-block y none*/
+
+/*Modos de posicionamiento: static, relative, absolute y fixed*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  list-style: none;
+
+  /*outline: thin solid red;*/
+}
+
+:root {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  background-color: #eef0f2;
+  border-bottom: medium solid #141414;
+  padding: 1rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  max-width: 400px;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  padding: 0 0.8rem;
+}
+
+li:hover {
+  color: #ffcc00;
+}
+
+/*position absolute
+se posiciona respecto a la caja madre
+*/
