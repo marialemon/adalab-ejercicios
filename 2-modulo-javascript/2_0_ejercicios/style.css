@@ -51,3 +51,9 @@
 .teacher--selected {
   border: thin solid blue;
 }
+
+/*2.09 ARRAYS Y BUCLES 2 STYLE*/
+
+.crossout {
+  text-decoration: line-through;
+}
