@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.05 Eventos</title>
+
+    <style>
+      :root {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      .fruit {
+        padding: 6px;
+        cursor: pointer;
+        border-bottom: 3px solid #b9b8ba; /* grey */
+      }
+      .fruit--selected {
+        border-bottom: 3px solid #64dac4; /* green */
+      }
+
+      .teachers {
+        list-style: none;
+        padding: 0;
+      }
+
+      .teacher {
+        display: inline-block;
+        cursor: pointer;
+        padding: 20px;
+      }
+
+      .teacher__img {
+        width: 200px;
+        height: auto;
+      }
+
+      .teacher--selected {
+        border: thin solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>2.05 Eventos</h1>
+    </header>
+
+    <main>
+      <article class="article">
+        <h3 class="article__title">Ejercicio 2</h3>
+        <form class="js-form">
+          <input type="text" class="js-name" />
+          <input type="text" class="js-surname" />
+
+          <input type="submit" class="js-submit" value="Enviar" />
+        </form>
+
+        <p class="js-result"></p>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Ejercicio 8</h3>
+        <ul class="fruits">
+          <li class="fruit fruit-strawberry">Fresa</li>
+          <li class="fruit fruit-banana">Plátano</li>
+          <li class="fruit fruit-kiwi">Kiwi</li>
+        </ul>
+
+        <button class="js-button">Botón</button>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Ejercicio 9</h3>
+
+        <ul class="teachers">
+          <li class="teacher teacher--isra">
+            <div>Isra</div>
+            <img
+              class="teacher__img"
+              src="https://pbs.twimg.com/profile_images/1043753095354875904/Y-7P5ReE_400x400.jpg"
+            />
+            <div class="favorite">Añadir</div>
+          </li>
+          <li class="teacher teacher--tuerto">
+            <div>¿Barlos?</div>
+            <img
+              class="teacher__img"
+              src="https://pbs.twimg.com/profile_images/1152838187586326529/ukeU3ydJ_400x400.png"
+            />
+            <div class="favorite">Añadir</div>
+          </li>
+          <li class="teacher teacher--nasi">
+            <div>Nasi</div>
+            <img
+              class="teacher__img"
+              src="https://pbs.twimg.com/profile_images/1043589031324528641/v4Ccv02i_400x400.jpg"
+            />
+            <div class="favorite">Añadir</div>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
