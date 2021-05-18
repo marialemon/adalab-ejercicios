@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.11 Peticiones al servidor 2</title>
+
+    <style>
+      :root {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      header {
+        padding: 0.5rem 1rem;
+      }
+      main {
+        padding: 2rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>2.11 Peticiones al servidor 2</h1>
+      <legend>Abrir DevTools: Console & Application</legend>
+    </header>
+
+    <main>
+      <article>
+        <form action="" method="post">
+          <select name="recipes" id="recipes" class="js-select">
+            <option value="Italian">Italia</option>
+            <option value="Canadian">Canadá</option>
+            <option value="French">Francia</option>
+          </select>
+
+          <input type="submit" class="form__button" value="Buscar" />
+        </form>
+
+        <ul class="recipes-list" id="recipes-list"></ul>
+      </article>
+
+      <form action="" method="post" class="form">
+        <input type="text" class="js-input" placeholder="Nombre" name="name" />
+        <input
+          type="text"
+          class="js-input2"
+          placeholder="Apellido"
+          name="surname"
+        />
+        <p class="js-p"></p>
+      </form>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
