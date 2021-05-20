@@ -83,10 +83,6 @@ const pElement = document.querySelector(".js-p");
 const formElement = document.querySelector(".form");
 const inputObject = {};
 
-function handleEvent(ev) {
-  const eventTarget = ev.target;
-}
-
 function renderResult() {
   pElement.innerHTML = `Valor del input: ${inputElementName.value} ${inputElementSurname.value}`;
 

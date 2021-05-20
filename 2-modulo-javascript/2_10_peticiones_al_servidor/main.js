@@ -33,6 +33,8 @@ fetch("https://dog.ceo/api/breed/chihuahua/images/random")
 
 //Ejercicio 6: La raza del perro
 
+console.log("EJERCICIO 6: La raza del perro");
+
 //Pintar el listado de razas
 //Pintar una imagen de cada raza
 
@@ -63,3 +65,21 @@ fetch("https://dog.ceo/api/breeds/list/all")
         });
     }
   });
+
+///////////////////
+
+console.log("EJERCICIO PRINCESAS");
+
+fetch("./infoprincesas.json")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  });
+
+const data = {
+  name: "",
+  email: "",
+  phone: "",
+  comment: "",
+  picture: "",
+};

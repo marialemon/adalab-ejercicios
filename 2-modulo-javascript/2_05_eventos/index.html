@@ -11,6 +11,21 @@
         font-family: Roboto, Helvetica, Arial, sans-serif;
       }
 
+      body {
+        padding: 1rem;
+      }
+
+      main {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2rem;
+      }
+
+      article {
+        border: thin solid #ffcc00;
+        padding: 1rem;
+      }
+
       .fruit {
         padding: 6px;
         cursor: pointer;
@@ -39,9 +54,16 @@
       .teacher--selected {
         border: thin solid blue;
       }
+
+      .red {
+        background-color: red;
+      }
+      .purple {
+        background-color: purple;
+      }
     </style>
   </head>
-  <body>
+  <body class="body">
     <header>
       <h1>2.05 Eventos</h1>
     </header>
@@ -98,6 +120,17 @@
             />
             <div class="favorite">Añadir</div>
           </li>
+        </ul>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Ejercicio 12: BONUS</h3>
+
+        <ul class="js-list">
+          <li class="js-item" id="0">Inicio</li>
+          <li class="js-item" id="1">Login</li>
+          <li class="js-item" id="2">Registro</li>
+          <li class="js-item" id="3">Contacto</li>
         </ul>
       </article>
     </main>

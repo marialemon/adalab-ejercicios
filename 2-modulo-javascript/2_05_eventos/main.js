@@ -2,6 +2,8 @@
 
 ////////2_05 EVENTOS
 
+//Ejercicio 2
+
 const formElement = document.querySelector(".js-form");
 const nameInput = document.querySelector(".js-name");
 const pText = document.querySelector(".js-result");
@@ -58,3 +60,46 @@ function addClass(event) {
 }
 
 ulTeachers.addEventListener("click", addClass);
+
+//EJERCICIO 12 BONUS
+
+/*
+
+const listElement = document.querySelector(".js-list");
+
+function handleListItem(ev) {
+  console.log(`El target es el elemento clickado`, ev.target);
+  console.log(`El id del <li/> clickado es:`, ev.target.id);
+  console.log(`El current target es el elemento escuchado`, ev.CurrentTarget);
+}
+
+listElement.addEventListener("click", handleListItem);
+*/
+//Versión 2
+
+const itemElements = document.querySelectorAll(".js-item");
+
+function handleItem(ev) {
+  console.log(`El current target siempre va a ser el li`, ev.currentTarget);
+}
+
+for (const item of itemElements) {
+  item.addEventListener("click", handleItem);
+}
+
+const bodyElement = document.querySelector(".body");
+
+function handleBodyScroll() {
+  console.log("Scrolleando", window.scrollY);
+  const currentScroll = window.scrollY;
+
+  if (currentScroll > 150) {
+    bodyElement.classList.remove("purple");
+    bodyElement.classList.add("red");
+  } else {
+    bodyElement.classList.remove("red");
+    bodyElement.classList.add("purple");
+  }
+}
+
+window.addEventListener("scroll", handleBodyScroll);
