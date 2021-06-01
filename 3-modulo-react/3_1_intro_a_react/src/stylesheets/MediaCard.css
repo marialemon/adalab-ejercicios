@@ -1,0 +1,8 @@
+.MediaCard {
+  background-color: whitesmoke;
+  border: thin solid #343434;
+  border-radius: 0.2rem;
+  max-width: 400px;
+  padding: 1.5rem;
+  margin: 8rem auto;
+}
