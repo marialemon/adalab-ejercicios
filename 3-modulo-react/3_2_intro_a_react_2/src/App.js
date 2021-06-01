@@ -12,4 +12,8 @@ class App extends React.Component {
   }
 }
 
+{
+  /* Esto es un comentario en react */
+}
+
 export default App;
