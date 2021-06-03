@@ -5,6 +5,10 @@ import Students from "./Students";
 import DefaultProps from "./DefaultProps";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <>
@@ -22,13 +26,21 @@ class App extends React.Component {
           <h2>Ejercicio 2:</h2>
           <br />
           <div className="HalfPage-section">
+            <HalfPage>
+              <h1>Esto es un h1</h1>
+              <p>Estoy en la izquierda</p>
+            </HalfPage>
+            <HalfPage>
+              <h2>Esto es un h2</h2>
+              <p>Estoy en la derecha</p>
+            </HalfPage>
             <HalfPage
               h1={<h1>Esto es un h1</h1>}
-              p={<p>Estoy en la izquierda</p>}
+              children={<p>Estoy en la derecha</p>}
             />
             <HalfPage
               h2={<h2>Esto es un h2</h2>}
-              p={<p>Estoy en la derecha</p>}
+              children={<p>Estoy en la izquierda</p>}
             />
           </div>
         </section>
